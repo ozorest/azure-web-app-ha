@@ -75,7 +75,7 @@ variable "private_key_path" {
 }
 
 variable "cloud_init_path" {
-    default = "cloud-init.txt"
+    default = ""
     description = "Caminho do cloud-init"
 }
 
