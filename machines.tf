@@ -1,5 +1,5 @@
 data "template_file" "custom_data" {
-  template = var.cloud_init_path != "" ? file(var.cloud_init_path) : "${path.module}/cloud-init.txt"
+  template = var.cloud_init_path != "" ? file(var.cloud_init_path) : file("${path.module}/cloud-init.txt")
 }
 
 resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
