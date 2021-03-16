@@ -3,7 +3,7 @@ data "template_file" "custom_data" {
 }
 
 resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
-  name                = "${var.project}-vmss"
+  name                            = "${var.project}-vmss"
   resource_group_name             = azurerm_resource_group.rg.name
   location                        = azurerm_resource_group.rg.location
   sku                             = var.machine_size

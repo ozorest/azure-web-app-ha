@@ -55,7 +55,7 @@ variable "image_offer" {
 }
 
 variable "image_sku" {
-    default = "16.04-LTS"
+    default = "20.04-LTS"
     description = "SKU da imagem do sistema operacional"
 }
 
